@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAD Games</title>
+    <style>
+        /* Reset some basic defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #1f1f1f;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #e64a19;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #e64a19;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            background-color: #1c1c1c;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 48px;
+            color: #fff;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #bbb;
+        }
+
+        .game-boxes {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .game-box {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .game-box p {
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        .game-box button {
+            background-color: #e64a19;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-box button:hover {
+            background-color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="logo">MAD Games</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">Features</a>
+        <a href="#">News</a>
+        <a href="#">Community</a>
+        <a href="#">Support</a>
+    </nav>
+</header>
+
+<!-- Main Content Section -->
+<section class="main-content">
+    <div>
+        <h1>Welcome to MAD Games!</h1>
+        <p>Your one-stop destination for the best games, news, and features!</p>
+        <div class="game-boxes">
+            <div class="game-box">
+                <h3>Game 1</h3>
+                <p>Description of Game 1 goes here.</p>
+                <button>Play Now</button>
+            </div>
+            <div class="game-box">
+                <h3>Game 2</h3>
+                <p>Description of Game 2 goes here.</p>
+                <button>Play Now</button>
+            </div>
+            <div class="game-box">
+                <h3>Game 3</h3>
+                <p>Description of Game 3 goes here.</p>
+                <button>Play Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
