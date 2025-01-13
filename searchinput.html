@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Bar with New Window</title>
+    <h1>Unblocker</h1>
+    <p>Dont put the https:// at the beginning use 1v1.lol for example not https://1v1.lol</p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: grey;
+            color: white;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #search-bar {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search Szvy..." onkeydown="checkEnter(event)">
+    </div>
+
+    <script>
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                search();
+            }
+        }
+
+        function search() {
+            const query = document.getElementById('search-bar').value;
+            
+            if (query) {
+                // Open the Google search results in a new tab
+                const googleSearchUrl = `https://szvy.deions.shop/embed.html#https://${encodeURIComponent(query)}`;
+                window.open(googleSearchUrl, '_blank');
+            } else {
+                alert('Please enter a search query.');
+            }
+        }
+    </script>
+
+</body>
+</html>
